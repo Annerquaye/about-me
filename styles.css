@@ -1,0 +1,47 @@
+.contaisner{
+height: 20rem;
+width: auto;
+align-items: center;
+padding: 2rem 1rem 1rem 1rem;
+margin: auto;
+text-align: left;
+}
+
+.sub-container {
+    flex-direction: row-reverse;
+}
+
+.sub-container h2 {
+    font-size: 1.5rem;
+    flex-direction: row;
+}
+
+.container h1{
+    font-size: 60px;
+    color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content {
+border: none;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.is-active {
+    display: block;
+}
+
+/* Hide scrollbar but still allow scrolling */
+.body, html {
+    overflow: scroll;
+    -ms-overflow-style: none;  /* For Internet Explorer 10+ */
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .body, html::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  

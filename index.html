@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bulma CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+    <!-- Font Awesome/Google Fonts CDN -->
+    <script src="https://kit.fontawesome.com/6b905c08f3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script&family=Francois+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+    </style>
+    <title>Hello, Abbey's World!</title>
+</head>
+
+<body>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <strong>Like The Sunbird</strong>
+            </a>
+            <!-- Burger icon for mobile -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- Menu for desktop -->
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#">
+                    <span class="icon"></span><i class="fas fa-home"></i></span>Home</span>
+                </a>
+                <a class="navbar-item" href="#">
+                    <span class="icon"><i class="fas fa-user"></i></span> About
+                </a>
+                <a class="navbar-item" href="#">
+                    <span class="icon"><i class="fas fa-envelope"></i></span> Say Hello
+                </a>
+                <a class="navbar-item" href="#">
+                    <span class="icon"><i class="fas fa-file-alt"></i></span> Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Navbar burger menu toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('#navbarMenu');
+
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <h3 span style="font-family: 'Shadows Into Light'; font-size: 30px; color: purple;"> Hi, my name is</h3>
+            <p span style=" font-family: 'Poppins' ; font-size: 80px; font-weight: 600; color:#85e89d;">Richard A.
+                Abbey</p>
+            <div class="intro-summary">
+                <p span style="font-family: Poppins; font-size: 25px; font-weight: 700; color: gray;">I write about
+                    finance. <br>I build stuff and for the web.<br>Web Apps. Interactive Dashboards. Data
+                    Visualizations.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="container">
+        <body>
+            <!-- Menu Tabs -->
+            <div class="tabs is-boxed">
+                <ul>
+                    <li class="is-active" data-tab="published">
+                        <a>
+                            <span class="icon is-small"><i class="fa-solid fa-newspaper"></i></span>
+                            <span>Published Stories</span>
+                        </a>
+                    </li>
+                    <li data-tab="data-viz">
+                        <a>
+                            <span class="icon is-small"><i class="fa-solid fa-chart-simple"></i></span>
+                            <span>Data Viz</span>
+                        </a>
+                    </li>
+                    <li data-tab="projects">
+                        <a>
+                            <span class="icon is-small"><i class="fa-solid fa-code"></i></i></span>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li data-tab="blog">
+                        <a>
+                            <span class="icon is-small"><i class="far fa-file-alt"></i></span>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="published" class="tab-content is-active">
+                <div class="columns is-multiline">
+                    <!-- Published Stories Cards -->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ikqMCeOji5Yo/v1/-1x-1.webp"
+                                        alt="Published Story 1">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Team Trump Can't Have It Both Ways on Oil and Gold</p>
+                                <p class="content">Unpredictable and inconsistent economic policies aren’t just
+                                    annoying. They also frustrate business planning. The Trump administration’s
+                                    ambitions for oil, for instance, are relatively straightforward...</p>
+                                <a href="https://www.bloomberg.com/opinion/articles/2025-02-28/team-trump-can-t-have-it-both-ways-on-oil-and-gold?srnd=phx-opinion-markets"
+                                    class="button is-link is-small">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second Card-->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iwT3M9KD_MCA/v3/-1x-1.webp"
+                                        alt="Published Story 1">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Make Them a Mar-a-Lago Accord They Can’t Refuse</p>
+                                <p class="content">All the questions arising from the hectic first month of the second
+                                    Trump administration find their expression in the dollar. So far, Trump 2.0 has been
+                                    very different, and far more dramatic...</p>
+                                <a href="https://www.bloomberg.com/opinion/articles/2025-02-28/team-trump-can-t-have-it-both-ways-on-oil-and-gold?srnd=phx-opinion-markets"
+                                    class="button is-link is-small">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third Card-->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ikqMCeOji5Yo/v1/-1x-1.webp"
+                                        alt="Published Story 1">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-5">Team Trump Can't Have It Both Ways on Oil and Gold</p>
+                                <p class="content">Unpredictable and inconsistent economic policies aren’t just
+                                    annoying. They also frustrate business planning. The Trump administration’s
+                                    ambitions for oil, for instance, are relatively straightforward...</p>
+                                <a href="https://www.bloomberg.com/opinion/articles/2025-02-27/make-them-a-mar-a-lago-accord-they-can-t-refuse?srnd=undefined"
+                                    class="button is-link is-small">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more cards as needed -->
+                </div>
+            </div>
+
+            <div id="data-viz" class="tab-content">
+                <div class="columns is-multiline">
+                    <!-- Data Viz Cards -->
+                    <div class="columns is-multiline">
+                        <div class="column is-4-desktop is-6-tablet">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://via.placeholder.com/300" alt="Data Visualization 1">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Data Visualization 1</p>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                                        deserunt distinctio veritatis eum architecto non atque ab voluptatibus beatae
+                                        incidunt alias est eos commodi ex nemo soluta maxime consequuntur dicta?.</p>
+                                    <a href="#" class="button is-link is-small">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-4-desktop is-6-tablet">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://via.placeholder.com/300" alt="Data Visualization 2">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Data Visualization 2</p>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                                        deserunt distinctio veritatis eum architecto non atque ab voluptatibus beatae
+                                        incidunt alias est eos commodi ex nemo soluta maxime consequuntur dicta?.</p>
+                                    <a href="#" class="button is-link is-small">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-4-desktop is-6-tablet">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://via.placeholder.com/300" alt="Data Visualization 3">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Data Visualization 3</p>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                                        deserunt distinctio veritatis eum architecto non atque ab voluptatibus beatae
+                                        incidunt alias est eos commodi ex nemo soluta maxime consequuntur dicta?.</p>
+                                    <a href="#" class="button is-link is-small">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-multiline">
+                        <div class="column is-4-desktop is-6-tablet">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://via.placeholder.com/300" alt="Data Visualization 1">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Data Visualization 1</p>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                                        deserunt distinctio veritatis eum architecto non atque ab voluptatibus beatae
+                                        incidunt alias est eos commodi ex nemo soluta maxime consequuntur dicta?.</p>
+                                    <a href="#" class="button is-link is-small">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-4-desktop is-6-tablet">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://via.placeholder.com/300" alt="Data Visualization 2">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Data Visualization 2</p>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                                        deserunt distinctio veritatis eum architecto non atque ab voluptatibus beatae
+                                        incidunt alias est eos commodi ex nemo soluta maxime consequuntur dicta?.</p>
+                                    <a href="#" class="button is-link is-small">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-4-desktop is-6-tablet">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://via.placeholder.com/300" alt="Data Visualization 3">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Data Visualization 3</p>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                                        deserunt distinctio veritatis eum architecto non atque ab voluptatibus beatae
+                                        incidunt alias est eos commodi ex nemo soluta maxime consequuntur dicta?.</p>
+                                    <a href="#" class="button is-link is-small">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Projects-->
+                    <div id="projects" class="tab-content">
+                        <div class="columns is-multiline">
+                            <!-- Projects Cards -->
+                            <div class="column is-4-desktop is-6-tablet">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-4by3">
+                                            <img src="https://via.placeholder.com/300" alt="Project 1">
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="title is-5">Project 1</p>
+                                        <p class="content">Snippet of the project details.</p>
+                                        <a href="#" class="button is-link is-small">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more cards as needed -->
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    const tabs = document.querySelectorAll(".tabs ul li");
+                                    const contents = document.querySelectorAll(".tab-content");
+
+                                    tabs.forEach(tab => {
+                                        tab.addEventListener("click", function () {
+                                            // Remove 'is-active' class from all tabs
+                                            tabs.forEach(t => t.classList.remove("is-active"));
+                                            // Add 'is-active' class to the clicked tab
+                                            this.classList.add("is-active");
+
+                                            // Hide all tab contents
+                                            contents.forEach(content => content.classList.remove("is-active"));
+                                            // Show content corresponding to the clicked tab
+                                            const activeContent = document.getElementById(this.getAttribute("data-tab"));
+                                            if (activeContent) {
+                                                activeContent.classList.add("is-active");
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
+        </body>
+
+</html>
